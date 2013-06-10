@@ -3,18 +3,6 @@
    ========================================================================== */
 
 
-/*font-family: 'Droid Sans', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Cuprum', sans-serif;
-
-*/
-
-@font-face {
-     font-family: "C64 Pro";
-     src: url("C64_Pro_v1.0-STYLE.woff") format("woff");
-}
-
 
 html,
 button,
@@ -140,7 +128,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: black;
 }
 
 nav a:hover,
@@ -151,6 +139,12 @@ nav a:visited {
 nav a:hover {
     text-decoration: underline;
 }
+
+nav a:active, nav a.active {
+    background: #e44d26;    
+}
+
+
 
 /* ==============
     MOBILE: Main
@@ -252,13 +246,14 @@ nav a:hover {
     }
 
     .header-container{
-        background:url('../images/teaser3.png')top center no-repeat;
+        box-shadow: 0px 5px #aaa;
+        background:#f5f5f5 url('../images/teaser3.png') top center no-repeat;
         height: 330px;
     }
 
     .header-container .line{
         background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.84);
     }
 
 /* ============
