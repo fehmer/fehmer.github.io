@@ -11,13 +11,13 @@ c1: 1693A5 FF9900 ccff00
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #630947;
+    border-top: 20px solid #420943;
 }
 nav a:active, nav a.active {
-    background: #630947;
+    background: #420943;
 }
 nav li a:hover { 
-    background-color: #630947; 
+    background-color: #420943 
 }
 
 
@@ -90,13 +90,17 @@ textarea {
 h1,h2,h3,h4{
     font-family: 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: 500;
+    font-variant: small-caps;
+    text-transform: capitalize;
 }
+
 aside{
     font-family: 'Titillium Web', sans-serif;
 }
 
 nav a{
     font-family: 'Titillium Web', Helvetica, Helvetica Neue, Arial, sans-serif;
+
 }
 
 
