@@ -11,13 +11,13 @@ c1: 1693A5 FF9900 ccff00
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #420943;
+    border-top: 20px solid #1693A5;
 }
 nav a:active, nav a.active {
-    background: #420943;
+    background: #1693A5;
 }
 nav li a:hover { 
-    background-color: #420943 
+    background-color: #1693A5 
 }
 
 
@@ -90,8 +90,7 @@ textarea {
 h1,h2,h3,h4{
     font-family: 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: 500;
-    font-variant: small-caps;
-    text-transform: capitalize;
+
 }
 
 aside{
@@ -102,6 +101,7 @@ nav a{
     font-family: 'Titillium Web', Helvetica, Helvetica Neue, Arial, sans-serif;
 
 }
+
 
 
 .wrapper {
@@ -226,13 +226,21 @@ nav a{
 
    @media only screen and (min-width: 480px) {
 
+    .vcard {
+        display: none;
+    }
+
+    .vcard-text {
+        display: inline;
+    }
+
 /* ====================
     INTERMEDIATE: Menu
     ==================== */
 
     nav a {
         float: left;
-        width: 27%;
+        width: 16%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -260,28 +268,94 @@ nav a{
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 
 /* ====================
     WIDE: CSS3 Effects
+
+
     ==================== */
-
-    .header-container,
-    .main aside {
-        box-shadow: 5px 5px #aaa;
-
+    .vcard-text {
+        display: none;
     }
 
-    .header-container{
-        box-shadow: 0px 5px #aaa;
-        background:#f9f9f9 url('../images/teaser.jpg') top center no-repeat;
-        height: 330px;
+    .vcard {
+        display: inline;
+        box-sizing: border-box;
+        width: 300px; height: 200px;
+        border-radius: 6px;
+        background: #1693A5;
+        box-shadow: 1px 2px 5px #555, inset 0 0 20px rgba(0,0,0,.25); 
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;    
+        float: right;
+        position: absolute;
+        right:25px;
+        bottom:50px;
     }
+    .vcard span {
+        font-weight: bold;
+    }
+    .vcard a{
+        font-family: 'Titillium Web', Helvetica, Helvetica Neue, Arial;
+        text-decoration: none;
+        color:#222;
+        font-size: 24px;
+        line-height: 1.5em;
 
-    .header-container .line{
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.84);
+    
+}
+
+    .vcard-top {
+        height: 65px;
+        padding-top: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 0.2em;
+        font-weight: 500;
     }
+    .vcard-top, .vcard-top h1{
+       font-family: 'Archivo Black', Helvetica, Helvetica Neue, Arial;
+   }
+
+   .fn {
+    background: #fff;    
+    height: 120px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header-container,
+.main aside {
+    box-shadow: 5px 5px #aaa;
+
+}
+
+.header-container{
+    box-shadow: 0px 5px #aaa;
+    background:#fefefe url('../images/teaser.jpg') top center no-repeat;
+    height: 330px;
+}
+
+.home .header-container{
+    box-shadow: 0px 0px #aaa;      
+    height:1000px;
+    background:url('../images/home.jpg') top center no-repeat;
+    text-align: right;
+
+}
+.home {
+    background:#fefefe;
+}
+
+.header-container .line{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.84);
+}
 
 /* ============
     WIDE: Menu
@@ -293,7 +367,7 @@ nav a{
 
     nav {
         float: right;
-        width: 38%;
+        width: 50%;
     }
 
     
