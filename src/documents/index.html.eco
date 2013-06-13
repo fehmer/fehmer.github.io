@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+
+<% for section in @sections : %>
+<section class="<%= section %>" id="<%= section %>">
+<%- @partial("section/#{section}.html.jade", @) %>
+<% if section != 'home': %>
+	<a class="top" href="#top">nach oben</a>
+<% end %>
+</section>
+
+
+<% end %>

@@ -1,0 +1,15 @@
+<!-- NAVIGATION -->
+<nav>
+  <ul>
+    <% for section in @sections : %>
+    	<% if section != 'home': %>
+      		<li class="nav-item">
+        		<a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+      		</li>
+    	<% end %>
+    <% end %>
+  </ul>
+</nav>
+
+
+<nav>

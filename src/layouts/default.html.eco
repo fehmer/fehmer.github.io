@@ -32,18 +32,8 @@
 	<div class="header-container">
 		<div class="line">
 			<header class="wrapper clearfix">
-				<a href="index.html"><h1 class="title">Christian Fehmer</h1></a>
-				<nav>
-					<ul>
-						<% for page in @getCollection("pages").toJSON(): %>
-        					<li>
-	            				<a class="<%= if page.id is @document.id then 'active' else 'inactive' %>" href="<%= page.url %>">
-                			<%= page.title %>
-            				</a>
-        					</li>
-    					<% end %>
-					</ul>
-				</nav>
+				<a href="#top"><h1 class="title">Christian Fehmer</h1></a>
+				<%-@partial('nav.html.eco', @)%>
 			</header>
 		</div>
 	</div>

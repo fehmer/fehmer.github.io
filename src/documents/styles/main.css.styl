@@ -38,6 +38,8 @@ nav
     background #191919
     &:hover
       text-decoration none
+    &:active
+      background:firstColor
   ul
     margin 0
     padding 0
@@ -94,6 +96,10 @@ textarea
 h1,h2,h3,h4
   font-family  fontArchivoNarrow
   font-weight 500
+
+section
+  padding-top 50px
+    
 
 aside
   font-family  fontTitillium
@@ -224,10 +230,11 @@ nav a:hover,
   html
     background dkgrey
 
+  .line
+    position: fixed
+    width: 100%
   .home
     background #fefefe
-    footer
-      display none
     .header-container
       border-bottom: 5px solid ltgrey
       height 1000px
