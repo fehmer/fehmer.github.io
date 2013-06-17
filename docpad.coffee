@@ -3,6 +3,10 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
+
+	
+	growl: false 
+
 	templateData:
         site:
             title: "Christian Fehmer"
