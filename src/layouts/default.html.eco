@@ -51,7 +51,7 @@
 
 	<div class="footer-container">
 		<footer class="wrapper">
-			<h3>footer</h3>
+			<p><a href="#">nach oben</a><span class="right">by Christian Fehmer 2005 - 2013, made with love and <a href="http://docpad.org/">Docpad</a></span> <p>
 		</footer>
 	</div>
 

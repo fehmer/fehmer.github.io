@@ -11,7 +11,7 @@ fontOpenSans= 'Open Sans', Helvetica, Helvetica Neue, Arial
 fontArchivoNarrow= 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif
 fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
 
-*
+.main-container
   text-shadow 0 1px 1px rgba(255,255,255,.3)
 
 .footer-container,
@@ -21,10 +21,13 @@ fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
 nav a:active, nav a.active
   background firstColor
 
+
 nav
   li
     a
       &:hover
+        background-color firstColor
+      &:active
         background-color firstColor
   a
     fontTitillium
@@ -39,7 +42,7 @@ nav
     &:hover
       text-decoration none
     &:active
-      background:firstColor
+      background: firstColor
   ul
     margin 0
     padding 0
@@ -146,7 +149,11 @@ nav a:hover,
 .footer-container
   footer
     color white
-    padding 20px 0
+  a
+    color white
+    text-decoration none
+    
+
 
 .ie7
   .title
@@ -199,6 +206,10 @@ nav a:hover,
   &:after
     clear both
 
+.right
+  float right
+
+
 @media only screen and (min-width: 480px)
   nav
     a
@@ -233,14 +244,25 @@ nav a:hover,
   .line
     position: fixed
     width: 100%
-  .home
-    background #fefefe
-    .header-container
-      border-bottom: 5px solid ltgrey
-      height 1000px
-      background url('../images/home.jpg') top center no-repeat
-      text-align right
+  .header-container
+    border-bottom: 5px solid ltgrey
+    height 1000px
+    background url('../images/home.jpg') top center no-repeat
+    text-align right
+    .line
+      background dkgrey
+  
+  body
+    padding-bottom 75px
+  
+  .footer-container
+    position absolute
+    width 100%
+    bottom 0
+    line-height 1em
+    position fixed
 
+  
   .vcard
     display inline
     box-sizing border-box
@@ -288,13 +310,6 @@ nav a:hover,
   .header-container,
       .main aside
     border-bottom: 5px solid ltgrey
-
-  .header-container
-    box-0px fileshadow 5px rgba(0,0,0,.50)
-    background #fefefe url('../images/teaser.jpg') top center no-repeat
-    height 330px
-    .line
-      background dkgrey
 
   .title
     float left
