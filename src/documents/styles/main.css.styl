@@ -19,7 +19,24 @@ fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
   border-top 20px solid firstColor
 
 nav a:active, nav a.active
+#about:target ~ div nav #link-about
+#projects:target ~ div nav #link-projects
+#skills:target ~ div nav #link-skills
+#hire:target ~ div nav #link-hire
   background firstColor
+
+
+
+.line
+    position: absolute
+    width 100%
+    background dkgrey
+    top 0
+    left 0
+
+#home
+  margin-top 60px
+
 
 
 nav
@@ -102,6 +119,7 @@ h1,h2,h3,h4
 
 section
   padding-top 50px
+  display block
     
 
 aside
@@ -241,16 +259,37 @@ nav a:hover,
   html
     background dkgrey
 
+  section
+    display none
+    &:target
+      display block
+
+  .top
+    display none
+
+  .line
+    position: fixed
+    width 100%
+    background dkgrey
+    top 0
+    left 0
+    height 72px
+
+  #home
+    margin-top 0px
+
   .line
     position: fixed
     width: 100%
+    background dkgrey
+    top 0
+    left 0
   .header-container
     border-bottom: 5px solid ltgrey
     height 1000px
     background url('../images/home.jpg') top center no-repeat
     text-align right
-    .line
-      background dkgrey
+  
   
   body
     padding-bottom 75px
