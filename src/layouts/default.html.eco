@@ -21,25 +21,21 @@
 	<%- @getBlock("styles").add(['styles/normalize.min.css', 'styles/main.css']).toHTML() %>
 
 
-	<%- @getBlock("scripts").add(['vendor/modernizr-2.6.2-respond-1.1.0.min.js','vendor/prefixfree.min.js']).toHTML() %>
+	<%- @getBlock("scripts").add(['vendor/modernizr-2.6.2-respond-1.1.0.min.js']).toHTML() %>
 
 </head>
 <body>
 
-	<div class="main-container">
-		<div class="main wrapper clearfix">
+	
 			<%- @content %>
 
 
-			<div class="line">
+	<div class="line">
 		<header>
-			<a href="#top"><h1 class="title">Christian Fehmer</h1></a>
+			<a href="#home"><h1 class="title">Christian Fehmer</h1></a>
 			<%-@partial('nav.html.eco', @)%>
 		</header>
-		</div>
-		<div class="header-container"> </div>
-		</div> <!-- #main -->
-	</div> <!-- #main-container -->
+	</div>
 
 
 	
@@ -51,7 +47,7 @@
 
 	<div class="footer-container">
 		<footer class="wrapper">
-			<p><a href="#">nach oben</a><span class="right">by Christian Fehmer 2005 - 2013, made with love and <a href="http://docpad.org/">Docpad</a></span> <p>
+			<p><a href="#home">nach oben</a><span class="right">by Christian Fehmer 2005 - 2013, made with love and <a href="http://docpad.org/">Docpad</a></span> <p>
 		</footer>
 	</div>
 

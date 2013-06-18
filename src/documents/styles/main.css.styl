@@ -1,3 +1,5 @@
+@import 'nib'
+
 dkgrey= #222
 ltgrey= #a6a6a6
 grey= #515151
@@ -6,16 +8,13 @@ firstColor= #00b4ff
 secondColor= #66CCFF
 thirdColor= #8DFF1F
 fourthColor= #EE3D40
-fontTitillium= 'Titillium Web', Helvetica, Helvetica Neue, Arial, sans-serif
 fontOpenSans= 'Open Sans', Helvetica, Helvetica Neue, Arial
 fontArchivoNarrow= 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif
 fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
 
-.main-container
-  text-shadow 0 1px 1px rgba(255,255,255,.3)
 
-.footer-container,
-.main aside
+
+.footer-container
   border-top 20px solid firstColor
 
 nav a:active, nav a.active
@@ -26,6 +25,8 @@ nav a:active, nav a.active
   background firstColor
 
 
+#home
+  margin-top: 220px
 
 .line
     position: absolute
@@ -33,21 +34,11 @@ nav a:active, nav a.active
     background dkgrey
     top 0
     left 0
+    line-height 0.2em
 
-#home
-  margin-top 60px
-
-
-
+  
 nav
-  li
-    a
-      &:hover
-        background-color firstColor
-      &:active
-        background-color firstColor
   a
-    fontTitillium
     display block
     margin-bottom 10px
     padding 15px 0
@@ -58,8 +49,10 @@ nav
     background #191919
     &:hover
       text-decoration none
+      background-color firstColor
     &:active
       background: firstColor
+      background-color firstColor
   ul
     margin 0
     padding 0
@@ -71,21 +64,22 @@ select,
 textarea
   color dkgrey
 
+html
+  background url(../images/bg.jpg) #f5f5f5
+
 body
   font-size 1em
   line-height 1.4
-  background url(../images/bg.jpg) #f5f5f5
   font 16px/26px
   font-family fontOpenSans
-  -webkit-font-smoothing antialiased
   font-smoothing antialiased
 
 ::-moz-selection
-  background #b3d4fc
+  background secondColor
   text-shadow none
 
 ::selection
-  background yellowgreen
+  background secondColor
   text-shadow none
 
 hr
@@ -107,70 +101,48 @@ fieldset
 textarea
   resize vertical
 
-.chromeframe
-  margin 0.2em 0
-  background #ccc
-  color #000
-  padding 0.2em 0
 
 h1,h2,h3,h4
   font-family  fontArchivoNarrow
   font-weight 500
 
 section
-  padding-top 50px
   display block
     
 
-aside
-  font-family  fontTitillium
+.header-container
+.main-container
+  text-shadow 0 1px 1px rgba(255,255,255,.3)
 
 .wrapper
   width 90%
   margin 0 5%
 
-#teaser
-  display none
-
-.header-container
-  line-height 0.2em
-
-.footer-container,
-    .main aside
-  display block
-
-.header-container,
-    .footer-container,
-    .main aside
-  background dkgrey
-
 .title
   color white
+  padding-left: 25px
 
-nav a:hover,
-    nav a:visited
-  color white
-
-.home
-  .main
-    padding 0 0 0 0
 
 .main
-  padding 30px 0
   article
     h1
       font-size 2em
-  aside
-    color white
-    padding 0px 5% 10px
+ 
 
 .footer-container
+  background dkgrey
+  display block
   footer
     color white
   a
     color white
     text-decoration none
-    
+  .right
+    float none
+
+
+
+  
 
 
 .ie7
@@ -229,6 +201,9 @@ nav a:hover,
 
 
 @media only screen and (min-width: 480px)
+  #home
+    margin-top: 80px
+
   nav
     a
       float left
@@ -253,54 +228,50 @@ nav a:hover,
       a
         margin 0 0.7%
 
-  
 
 @media only screen and (min-width: 760px) 
-  html
-    background dkgrey
 
-  section
-    display none
-    &:target
-      display block
+  #home
+    padding-top 0px
+    padding-bottom 0px
+    margin-top: 0px
 
   .top
     display none
 
-  .line
-    position: fixed
-    width 100%
-    background dkgrey
-    top 0
-    left 0
-    height 72px
+  .footer-container
+    .right
+      float right
+  
+  @media (min-height: 600px)
+    .line
+      position: fixed
+      width 100%
+    .footer-container
+      position absolute
+      width 100%
+      bottom 0
+      line-height 1em
+      position fixed
+    .panel
+      padding-top 60px
+      padding-bottom 100px
 
-  #home
-    margin-top 0px
 
-  .line
-    position: fixed
-    width: 100%
-    background dkgrey
-    top 0
-    left 0
+  .panel
+    z-index 2
+    min-width 100%
+    display none
+    min-height: 1000px
+    &:target
+      display block
+
+
   .header-container
     border-bottom: 5px solid ltgrey
     height 1000px
     background url('../images/home.jpg') top center no-repeat
     text-align right
-  
-  
-  body
-    padding-bottom 75px
-  
-  .footer-container
-    position absolute
-    width 100%
-    bottom 0
-    line-height 1em
-    position fixed
-
   
   .vcard
     display inline
@@ -310,8 +281,6 @@ nav a:hover,
     border-radius 6px
     background firstColor
     box-shadow 1px 2px 5px  rgba(0,0,0,.50), inset 0 0 20px rgba(0,0,0,.25)
-    -webkit-transform rotate(-10deg)
-    -moz-transform rotate(-10deg)
     transform rotate(-10deg)
     line-height 1.5em
     font-family fontOpenSans
@@ -322,7 +291,6 @@ nav a:hover,
     span
       font-weight bold
     a
-      font-family  fontTitillium
       text-decoration none
       color dkgrey
       font-size 24px
@@ -336,20 +304,16 @@ nav a:hover,
     text-align center
     line-height 0.2em
     font-weight 500
-
-  .vcard-top, .vcard-top h1
     font-family fontArchivoBlack
 
+  
   .fn
     background #fff
     height 120px
     text-align center
     padding-top 5px
 
-  .header-container,
-      .main aside
-    border-bottom: 5px solid ltgrey
-
+ 
   .title
     float left
 

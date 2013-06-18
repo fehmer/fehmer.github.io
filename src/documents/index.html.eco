@@ -4,12 +4,25 @@ layout: default
 
 
 <% for section in @sections : %>
-<section class="<%= section %>" id="<%= section %>">
-	<div class="space">
-		<%- @partial("section/#{section}.html.jade", @) %>
-		<a href="#top" class="top">nach oben</a>
-	</div>
-</section>
 
+	<% if section is 'home': %>
+	<section class="<%= section %>" id="<%= section %>">
+		<div class="header-container" >
+			<div class="wrapper clearfix">
+				<%- @partial("section/#{section}.html.jade", @) %>
+			</div>
+		</div>
+	</section>
+	<% else: %>
+	<section class="<%= section %> panel" id="<%= section %>">
+		<div class="main-container">
+			<div class="main wrapper clearfix">
+				<%- @partial("section/#{section}.html.jade", @) %>
+				<a href="#top" class="top">nach oben</a>
+			</div>
+		</div>
+	</section>
+	<% end %>
+</section>
 
 <% end %>
