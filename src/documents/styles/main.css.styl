@@ -1,7 +1,7 @@
 @import 'nib'
 
 dkgrey= #222
-ltgrey= #a6a6a6
+ltgrey= #ddd
 grey= #515151
 
 firstColor= #00b4ff
@@ -242,6 +242,33 @@ section
   .level-4
     width 100%
 
+#timeline
+  margin: 20px auto
+  overflow: hidden
+  .timeslot   
+    border-top 3px solid ltgrey
+    padding-top 10px
+    border-left 3px solid secondColor
+    padding-left 5px
+
+  .year
+    padding-top 10px
+    font-size: 2em
+    color: firstColor
+    
+  .project
+    padding-bottom 20px
+    p
+      margin 5px 0 0 0
+    .name
+      font-size 1.5em
+
+
+
+      
+  
+
+
 
 
 @media only screen and (min-width: 480px)
@@ -389,6 +416,20 @@ section
     .sub
       dt
         text-indent 0px
+
+  #timeline
+    .timeslot
+      padding-left: 130px
+      position relative
+      border-left none
+    .year
+      position absolute
+      top: 0
+      left: 0
+      height 100%
+      width: 100px
+      border-right 3px solid secondColor
+
 
 
 
