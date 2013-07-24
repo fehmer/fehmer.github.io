@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "docpad": "6.x",
-    "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-livereload": "~2.4.0",
-    "docpad-plugin-jade": "~2.3.1",
-    "docpad-plugin-stylus": "~2.3.0",
-    "docpad-plugin-partials": "~2.6.3"
+    "docpad-plugin-eco": "",
+    "docpad-plugin-livereload": "",
+    "docpad-plugin-jade": "",
+    "docpad-plugin-stylus": "",
+    "docpad-plugin-partials": ""
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

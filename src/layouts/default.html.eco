@@ -4,9 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
 <head>
-	<style>
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans|Archivo+Narrow|Archivo+Black|Titillium+Web:300);
-	</style>
+	
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -21,7 +19,7 @@
 	<%- @getBlock("styles").add(['styles/normalize.min.css', 'styles/main.css']).toHTML() %>
 
 
-	<%- @getBlock("scripts").add(['vendor/modernizr-2.6.2-respond-1.1.0.min.js']).toHTML() %>
+	<%- @getBlock("scripts").toHTML() %>
 
 </head>
 <body>

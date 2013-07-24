@@ -1,5 +1,19 @@
 @import 'nib'
 
+
+@font-face
+  font-family: 'Open Sans'
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'Amble'
+  src: url('../fonts/Amble-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
 dkgrey= #222
 ltgrey= #ddd
 grey= #515151
@@ -10,10 +24,8 @@ thirdColor= #8DFF1F
 fourthColor= #EE3D40
 progressColor = red
 
-
 fontOpenSans= 'Open Sans', Helvetica, Helvetica Neue, Arial
-fontArchivoNarrow= 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif
-fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
+fontAmble= 'Amble', Helvetica, Helvetica Neue, Arial, sans-serif
 
 
 .footer-container
@@ -71,7 +83,7 @@ html
 
 body
   font-size 1em
-  line-height 1.4
+  line-height 1.8
   font 16px/26px
   font-family fontOpenSans
   font-smoothing antialiased
@@ -105,7 +117,7 @@ textarea
 
 
 h1,h2,h3,h4
-  font-family  fontArchivoNarrow
+  font-family  fontAmble
   font-weight 500
 
 section
@@ -370,7 +382,7 @@ section
     text-align center
     line-height 0.2em
     font-weight 500
-    font-family fontArchivoBlack
+    font-family fontAmble
 
   .fn
     background #fff
