@@ -1,0 +1,14 @@
+---
+cacheable: false
+---
+<div class="project">
+  <div class="name">
+    <%= @title %>
+    <% if @duration? :%>(<%= @duration %> Monate)<% end %>
+    <% if @type != "com": %>
+      <div class="label"><%= @type %></div>
+    <% end %>
+  </div>
+  
+  <%- @content %>
+</div>

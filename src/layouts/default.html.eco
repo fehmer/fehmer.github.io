@@ -16,7 +16,7 @@
 
 	<title><%= @getPreparedTitle() %></title>
 	
-	<%- @getBlock("styles").add(['styles/normalize.min.css', 'styles/main.css']).toHTML() %>
+	<%- @getBlock("styles").add(['/styles/normalize.min.css', '/styles/main.css']).toHTML() %>
 
 
 	<%- @getBlock("scripts").toHTML() %>
@@ -30,8 +30,8 @@
 
 	<div class="line">
 		<header>
-			<a href="#home"><h1 class="title">Christian Fehmer</h1></a>
-			<%-@partial('nav.html.eco', @)%>
+			<a href="/"><h1 class="title">Christian Fehmer</h1></a>
+			<%-@partial('nav.html', @)%>
 		</header>
 	</div>
 

@@ -1,15 +1,16 @@
-<!-- NAVIGATION -->
 <nav>
   <ul>
-    <% for section in @sections : %>
-    	<% if section != 'home': %>
-      		<li class="nav-item">
-        		<a id="link-<%= section %>" href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
-      		</li>
-    	<% end %>
-    <% end %>
+    <li class="nav-item">
+      <a id="link-about" href="/#about" title="Über mich" class="nav-link">Über mich</a>
+    </li>
+    <li class="nav-item">
+      <a id="link-projects" href="/#projects" title="Projekte" class="nav-link">Projekte</a>
+    </li>
+    <li class="nav-item">
+      <a id="link-blog" href="/blog" title="Blog" class="nav-link <%= @isBlog() %>">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a id="link-hire" href="/#hire" title="Hire!" class="nav-link">Hire!</a>
+    </li>
   </ul>
 </nav>
-
-
-<nav>

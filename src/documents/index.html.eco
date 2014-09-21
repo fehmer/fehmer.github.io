@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <% for section in @sections : %>
 
 	<% if section is 'home': %>
