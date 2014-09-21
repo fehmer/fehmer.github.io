@@ -4,21 +4,25 @@
 # Define the DocPad Configuration
 docpadConfig = {
 
-	
-	growl: false 
+    
+    growl: false 
 
-	templateData:
+
+    templateData:
+        moment: require('moment')
+
         site:
             title: "Christian Fehmer"
 
-        sections: ['home', 'about', 'projects', 'skills', 'hire']
+        sections: ['home', 'about', 'projects', 'blog', 'hire']
 
         labels:
-        	home: 'Hello!'
-        	about: 'Über mich'
-        	projects: 'Projekte'
-        	skills: 'Skills'
-        	hire: 'Hire!'
+            home: 'Hello!'
+            about: 'Über mich'
+            projects: 'Projekte'
+            skills: 'Skills'
+            blog: 'Blog'
+            hire: 'Hire!'
 
         levelLabels: ['basic','advanced','professional','expert']
 
@@ -40,10 +44,15 @@ docpadConfig = {
         
         getPreparedTitle: -> if @document.title then "#{@document.title} - #{@site.title}" else @site.title
         homeClass: -> if @document.name is 'index.html' then 'home'
+        getTagUrl: (tag) ->
+            slug = tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+            "/tags/#{slug}/"
 
     collections:
         pages: ->
             @getCollection("html").findAllLive({isPage:true},[order:1])
+        posts: ->
+            @getCollection('documents').findAllLive({relativeDirPath: 'posts'}, [date: -1])
 }
 
 # Export the DocPad Configuration
