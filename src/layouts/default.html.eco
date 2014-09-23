@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- @getBlock("meta").toHTML() %>
     <title><%= @getPreparedTitle() %></title>
-    <%- @getBlock("styles").add(['/styles/main.css']).toHTML() %>
-    <%- @getBlock("scripts").add(['/scripts/bootstrap.min.js', '/scripts/main.js','/scripts/scrollspy.js']).toHTML() %>
+    <%- @getBlock("styles").add(['styles/main.css']).toHTML() %>
+    <%- @getBlock("scripts").add(['scripts/bootstrap.min.js', 'scripts/main.js','scripts/scrollspy.js']).toHTML() %>
   </head>
   <body data-spy="scroll" data-target="#navigation" data-offset="0" >
 
