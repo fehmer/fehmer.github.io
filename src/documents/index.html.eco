@@ -2,26 +2,22 @@
 layout: default
 ---
 
-<% for section in @sections : %>
 
-	<% if section is 'home': %>
-	<section class="<%= section %>" id="<%= section %>">
-		<div class="header-container" >
-			<div class="wrapper clearfix">
-				<%- @partial("section/#{section}.html.jade", @) %>
-			</div>
-		</div>
-	</section>
-	<% else: %>
-	<section class="<%= section %> panel" id="<%= section %>">
-		<div class="main-container">
-			<div class="main wrapper clearfix">
+	<% for section in @sections : %>
+		<% if section is 'home' or section is 'blog': %>
+		
+		<% else: %>
+		<section class="<%= section %> frontpage" id="<%= section %>">
+			<div class="container">
 				<%- @partial("section/#{section}.html", @) %>
-				<a href="#top" class="top">nach oben</a>
+				<a href="#<%= section %>" class="top">nach oben</a>
 			</div>
-		</div>
-	</section>
+		</section>
+		<% end %>
 	<% end %>
-</section>
 
-<% end %>
+<section class="home" id="home">
+		<div class="intro" >
+				<%- @partial("section/home.html.jade", @) %>
+		</div>
+</section>

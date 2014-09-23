@@ -1,3 +1,5 @@
+<h1>Projekte</h1>
+
 <div id="timeline">
   <% for year in @pyears(): %>
   <div class="timeslot clearfix">

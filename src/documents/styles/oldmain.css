@@ -1,21 +1,10 @@
 @import 'nib'
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700")
 
-@font-face
-  font-family: 'Open Sans'
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
-  font-weight: normal
-  font-style: normal
-
-
-@font-face
-  font-family: 'Amble'
-  src: url('../fonts/Amble-Regular.ttf') format('truetype')
-  font-weight: normal
-  font-style: normal
-
-dkgrey= #191919
+dkgrey= #222
 ltgrey= #ddd
 grey= #515151
+hoverColor= #090909
 
 firstColor= #00b4ff
 secondColor= #66CCFF
@@ -23,8 +12,9 @@ thirdColor= #8DFF1F
 fourthColor= #EE3D40
 progressColor = red
 
-fontOpenSans= 'Open Sans', Helvetica, Helvetica Neue, Arial
-fontAmble= 'Amble', Helvetica, Helvetica Neue, Arial, sans-serif
+
+
+
 
 
 .footer-container
@@ -35,7 +25,7 @@ nav a:active, nav a.active
 #projects:target ~ div nav #link-projects
 #skills:target ~ div nav #link-skills
 #hire:target ~ div nav #link-hire
-  background firstColor
+  background hoverColor
 
 
 #home
@@ -48,6 +38,7 @@ nav a:active, nav a.active
     top 0
     left 0
     line-height 0.2em
+    border-bottom 1px solid #121212
 
   
 nav
@@ -59,13 +50,12 @@ nav
     text-decoration none
     font-weight 700
     color white
-    background #191919
+    background dkgrey
     &:hover
       text-decoration none
-      background-color firstColor
+      background-color hoverColor
     &:active
-      background: firstColor
-      background-color firstColor
+      background: hoverColor
   ul
     margin 0
     padding 0
@@ -80,12 +70,15 @@ textarea
 html
   background url(../images/bg.jpg) #f5f5f5
 
+
 body
   font-size 1em
   line-height 1.8
   font 16px/26px
-  font-family fontOpenSans
+  font-family 'Source Sans Pro', Calibri, Candara, Arial, sans-serif
   font-smoothing antialiased
+  -webkit-font-smoothing antialiased
+  color #333
 
 ::-moz-selection
   background secondColor
@@ -116,7 +109,6 @@ textarea
 
 
 h1,h2,h3,h4
-  font-family  fontAmble
   font-weight 500
 
 section
@@ -373,7 +365,6 @@ section
     box-shadow 1px 2px 5px  rgba(0,0,0,.50), inset 0 0 20px rgba(0,0,0,.25)
     transform rotate(-10deg)
     line-height 1.5em
-    font-family fontOpenSans
     float right
     position absolute
     right 25px

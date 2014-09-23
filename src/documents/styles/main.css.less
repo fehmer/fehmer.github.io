@@ -1,0 +1,79 @@
+@import '../../files/styles/bootstrap/bootstrap.less';
+@import 'variables.less';
+@import 'cosmo.less';
+@import 'vcard.less';
+@import 'project.less';
+
+@navbar-default-link-hover-bg: @brand-primary;
+@navbar-default-link-active-bg: @brand-primary;
+
+header{
+  border-bottom: 0px solid white !important;
+}
+
+p  {font-size: 1.2em;  }
+h1 {font-size: 4em;     }
+
+nav li a{
+  transition: all 0.4s ease-in-out;
+}
+
+// Active header
+nav a:active,
+nav a.active,
+#about:target ~ header nav #link-about,
+#projects:target ~ header nav #link-projects,
+#hire:target ~ header nav #link-hire {
+  background: @brand-primary;
+}
+#about:target ~ footer,
+#projects:target ~ footer,
+#hire:target ~ footer {
+  display:block;
+}
+#about:target ~ #home,
+#projects:target ~ #home,
+#hire:target ~ #home {
+  display:none;
+}
+
+#home{
+  min-height: 1000px;
+}
+
+//hide non active sections
+ .frontpage{
+    z-index: 2;
+    min-width: 100%;
+    display: none;
+    //min-height: 800px;
+    &:target{
+      display: block;
+    }
+  }
+
+//navbar padding
+section .container{
+  position: relative;
+  h1{
+    padding-top: @navbar-height+@padding-base-vertical;
+  }
+}
+
+#home .intro{
+  border-bottom: 5px solid @gray-light;
+  height: 1000px;
+  background: url('../images/home.jpg') top center no-repeat;
+  text-align: right;
+}
+
+footer{
+  margin-top:25px;
+  display:none;
+}
+
+
+::selection,::-moz-selection{
+  background: @brand-primary;
+  text-shadow: none;
+}

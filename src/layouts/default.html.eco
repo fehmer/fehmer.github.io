@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
-<head>
-	
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- @getBlock("meta").toHTML() %>
+    <title><%= @getPreparedTitle() %></title>
+    <%- @getBlock("styles").add(['/styles/main.css']).toHTML() %>
+    <%- @getBlock("scripts").add(['/scripts/bootstrap.min.js', '/scripts/main.js']).toHTML() %>
+  </head>
+  <body>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+    <%- @content %>
 
-	<%- @getBlock("meta").toHTML() %>
+    <header class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">Christian Fehmer</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <nav class="nav navbar-nav">
+            <li class="nav-item">
+              <a id="link-about" href="/#about" class="nav-link">Über mich</a>
+            </li>
+            <li class="nav-item">
+              <a id="link-projects" href="/#projects" class="nav-link">Projekte</a>
+            </li>
+            <li class="nav-item">
+              <a id="link-blog" href="/blog" class="nav-link <%= @isBlog() %>">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a id="link-hire" href="/#hire" class="nav-link">Hire!</a>
+            </li>
+ 
+         </nav>
 
-
-	<title><%= @getPreparedTitle() %></title>
-	
-	<%- @getBlock("styles").add(['/styles/normalize.min.css', '/styles/main.css']).toHTML() %>
-
-
-	<%- @getBlock("scripts").toHTML() %>
-
-</head>
-<body>
-
-	
-			<%- @content %>
-
-
-	<div class="line">
-		<header>
-			<a href="/"><h1 class="title">Christian Fehmer</h1></a>
-			<%-@partial('nav.html', @)%>
-		</header>
-	</div>
-
-
-	
-	
-
-
-	
-
-
-	<div class="footer-container">
-		<footer class="wrapper">
-			<p><a href="#home">nach oben</a><span class="right">by Christian Fehmer 2005 - 2013, made with love and <a href="http://docpad.org/">Docpad</a></span> <p>
-		</footer>
-	</div>
+        </div>
+      </div>
+    </header>
 
 
 
+    <footer>
+      <div class="container">
+         <%- @partial('me', false) %>
+      </div>
+    </footer>
 
-</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script></script>
+  </body>
 </html>

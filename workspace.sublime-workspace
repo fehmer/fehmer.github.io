@@ -23,7 +23,15 @@
 			"file": "src/documents/styles/main.css.styl",
 			"settings":
 			{
-				"buffer_size": 7651,
+				"buffer_size": 7975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/documents/projects/2014-docpad.html.md",
+			"settings":
+			{
+				"buffer_size": 277,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,31 +47,7 @@
 			"file": "docpad.coffee",
 			"settings":
 			{
-				"buffer_size": 3884,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/cfe/workspace/ewalnet-docpad/src/layouts/page.html.eco",
-			"settings":
-			{
-				"buffer_size": 75,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/partials/section/projects.html.jade",
-			"settings":
-			{
-				"buffer_size": 6883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/posts/2014-09-20-a-fresh-start.md",
-			"settings":
-			{
-				"buffer_size": 151,
+				"buffer_size": 4440,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +63,7 @@
 			"file": "src/layouts/posts.html.eco",
 			"settings":
 			{
-				"buffer_size": 312,
+				"buffer_size": 353,
 				"line_ending": "Unix",
 				"name": "post.html.eco"
 			}
@@ -156,18 +140,22 @@
 	[
 		"/home/cfe/workspace/fehmer-info",
 		"/home/cfe/workspace/fehmer-info/src",
+		"/home/cfe/workspace/fehmer-info/src/documents",
+		"/home/cfe/workspace/fehmer-info/src/documents/posts",
+		"/home/cfe/workspace/fehmer-info/src/documents/projects",
+		"/home/cfe/workspace/fehmer-info/src/documents/styles",
 		"/home/cfe/workspace/fehmer-info/src/layouts",
 		"/home/cfe/workspace/fehmer-info/src/partials",
 		"/home/cfe/workspace/fehmer-info/src/partials/section",
-		"/home/cfe/workspace/ewalnet-docpad",
 		"/home/cfe/workspace/ewalnet-docpad/src",
 		"/home/cfe/workspace/ewalnet-docpad/src/layouts",
 		"/home/cfe/workspace/ewalnet-docpad/src/partials"
 	],
 	"file_history":
 	[
-		"/home/cfe/workspace/fehmer-info/src/partials/section/home.html.jade",
+		"/home/cfe/workspace/fehmer-info/src/documents/posts/2014-09-20-a-fresh-start.md",
 		"/home/cfe/workspace/fehmer-info/src/partials/section/projects.html.jade",
+		"/home/cfe/workspace/fehmer-info/src/partials/section/home.html.jade",
 		"/home/cfe/workspace/ewalnet-docpad/out/projects.html",
 		"/home/cfe/workspace/ewalnet-docpad/node_modules/docpad-plugin-less/node_modules/less/test/browser/phantom-runner.js",
 		"/opt/sublime_text/changelog.txt",
@@ -180,7 +168,7 @@
 	],
 	"find":
 	{
-		"height": 50.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -194,6 +182,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":",
+			"1",
+			"height: ",
+			":",
 			"\n  ",
 			"skil",
 			".title",
@@ -216,7 +208,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -225,15 +217,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7651,
+						"buffer_size": 7975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3039,
-								3039
+								4331,
+								4331
 							]
 						],
 						"settings":
@@ -243,14 +235,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3394.0,
+						"translation.y": 4705.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "src/documents/projects/2014-docpad.html.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "src/documents/index.html.eco",
 					"semi_transient": false,
 					"settings":
@@ -275,16 +295,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "docpad.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3884,
+						"buffer_size": 4440,
 						"regions":
 						{
 						},
@@ -309,92 +329,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/home/cfe/workspace/ewalnet-docpad/src/layouts/page.html.eco",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 75,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								75,
-								75
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "src/partials/section/projects.html.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6883,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3727,
-								3727
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1989.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/documents/posts/2014-09-20-a-fresh-start.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 151,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
@@ -424,20 +359,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "src/layouts/posts.html.eco",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 312,
+						"buffer_size": 353,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								353,
+								353
 							]
 						],
 						"settings":
@@ -449,11 +384,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "src/partials/post.html.eco",
 					"semi_transient": false,
 					"settings":
@@ -478,11 +413,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 7,
 					"file": "src/partials/section/blog.html.eco",
 					"semi_transient": false,
 					"settings":
@@ -507,7 +442,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
