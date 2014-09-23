@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<section class="home" id="home">
+		<div class="intro" >
+				<%- @partial("section/home.html.jade", @) %>
+		</div>
+</section>
+
+
 
 	<% for section in @sections : %>
 		<% if section is 'home' or section is 'blog': %>
@@ -15,9 +22,3 @@ layout: default
 		</section>
 		<% end %>
 	<% end %>
-
-<section class="home" id="home">
-		<div class="intro" >
-				<%- @partial("section/home.html.jade", @) %>
-		</div>
-</section>

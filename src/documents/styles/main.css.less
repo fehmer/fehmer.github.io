@@ -1,4 +1,6 @@
+//@import 'bootstrap.less';
 @import '../../files/styles/bootstrap/bootstrap.less';
+
 @import 'variables.less';
 @import 'cosmo.less';
 @import 'vcard.less';
@@ -6,6 +8,10 @@
 
 @navbar-default-link-hover-bg: @brand-primary;
 @navbar-default-link-active-bg: @brand-primary;
+
+body{
+  position:relative;
+}
 
 header{
   border-bottom: 0px solid white !important;
@@ -19,7 +25,7 @@ nav li a{
 }
 
 // Active header
-nav a:active,
+/*nav a:active,
 nav a.active,
 #about:target ~ header nav #link-about,
 #projects:target ~ header nav #link-projects,
@@ -36,16 +42,29 @@ nav a.active,
 #hire:target ~ #home {
   display:none;
 }
-
+#about:target ~ header,
+#projects:target ~ header,
+#hire:target ~ header {
+  display:block;
+}
+*/
 #home{
-  min-height: 1000px;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+  text-align: center;
+  background: #222 no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 //hide non active sections
  .frontpage{
     z-index: 2;
     min-width: 100%;
-    display: none;
+    //display: none;
     //min-height: 800px;
     &:target{
       display: block;
@@ -56,7 +75,7 @@ nav a.active,
 section .container{
   position: relative;
   h1{
-    padding-top: @navbar-height+@padding-base-vertical;
+    margin-top: @navbar-height+(@padding-base-vertical*2);
   }
 }
 
@@ -71,9 +90,22 @@ footer{
   margin-top:25px;
   display:none;
 }
+header{
+  
+}
 
 
 ::selection,::-moz-selection{
   background: @brand-primary;
   text-shadow: none;
+}
+
+
+element.style {
+}
+.scrollspy-example {
+position: relative;
+height: 200px;
+margin-top: 10px;
+overflow: auto;
 }

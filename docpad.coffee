@@ -70,7 +70,7 @@ docpadConfig = {
                 @site.title
 
         homeClass: -> if @document.name is 'index.html' then 'home'
-        isBlog: -> if @document.name is 'blog.html' or  @document.layout is 'posts' then 'active'
+        isBlog: -> if @document.name is 'blog.html' or  @document.layout is 'posts' then true else false
 
         getTagUrl: (tag) ->
             slug = tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
