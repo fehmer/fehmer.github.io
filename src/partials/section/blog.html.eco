@@ -1,0 +1,5 @@
+<h1>Blog</h1>
+
+<% for document in @getCollection('posts').toJSON(): %>
+    <%- @partial('post', {title: document.title, url: document.url, tags: document.tags, date: document.date, content: document.contentRenderedWithoutLayouts }) %>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Projekte</h1>
+
+<div id="timeline">
+  <% for year in @pyears(): %>
+  <div class="timeslot clearfix">
+    <div class="year"><%= year %></div>
+
+    <% for document in @projects(year): %>
+        <%- @partial('project', {title: document.title, tags: document.tags, duration: document.duration, date: document.date, content: document.contentRenderedWithoutLayouts, type: document.type }) %>
+    <% end %>
+  </div>
+  <% end %>
+</div>

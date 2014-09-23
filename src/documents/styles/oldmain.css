@@ -1,48 +1,61 @@
+@import 'nib'
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700")
+
 dkgrey= #222
-ltgrey= #a6a6a6
+ltgrey= #ddd
 grey= #515151
+hoverColor= #090909
 
 firstColor= #00b4ff
 secondColor= #66CCFF
 thirdColor= #8DFF1F
 fourthColor= #EE3D40
-fontTitillium= 'Titillium Web', Helvetica, Helvetica Neue, Arial, sans-serif
-fontOpenSans= 'Open Sans', Helvetica, Helvetica Neue, Arial
-fontArchivoNarrow= 'Archivo Narrow', Helvetica, Helvetica Neue, Arial, sans-serif
-fontArchivoBlack= 'Archivo Black', Helvetica, Helvetica Neue, Arial
+progressColor = red
 
-.main-container
-  text-shadow 0 1px 1px rgba(255,255,255,.3)
 
-.footer-container,
-.main aside
+
+
+
+
+.footer-container
   border-top 20px solid firstColor
 
 nav a:active, nav a.active
-  background firstColor
+#about:target ~ div nav #link-about
+#projects:target ~ div nav #link-projects
+#skills:target ~ div nav #link-skills
+#hire:target ~ div nav #link-hire
+  background hoverColor
 
 
+#home
+  margin-top: 220px
+
+.line
+    position: absolute
+    width 100%
+    background dkgrey
+    top 0
+    left 0
+    line-height 0.2em
+    border-bottom 1px solid #121212
+
+  
 nav
-  li
-    a
-      &:hover
-        background-color firstColor
-      &:active
-        background-color firstColor
   a
-    fontTitillium
     display block
     margin-bottom 10px
     padding 15px 0
     text-align center
     text-decoration none
-    font-weight bold
+    font-weight 700
     color white
-    background #191919
+    background dkgrey
     &:hover
       text-decoration none
+      background-color hoverColor
     &:active
-      background: firstColor
+      background: hoverColor
   ul
     margin 0
     padding 0
@@ -54,21 +67,25 @@ select,
 textarea
   color dkgrey
 
+html
+  background url(../images/bg.jpg) #f5f5f5
+
+
 body
   font-size 1em
-  line-height 1.4
-  background url(../images/bg.jpg) #f5f5f5
+  line-height 1.8
   font 16px/26px
-  font-family fontOpenSans
-  -webkit-font-smoothing antialiased
+  font-family 'Source Sans Pro', Calibri, Candara, Arial, sans-serif
   font-smoothing antialiased
+  -webkit-font-smoothing antialiased
+  color #333
 
 ::-moz-selection
-  background #b3d4fc
+  background secondColor
   text-shadow none
 
 ::selection
-  background yellowgreen
+  background secondColor
   text-shadow none
 
 hr
@@ -90,69 +107,48 @@ fieldset
 textarea
   resize vertical
 
-.chromeframe
-  margin 0.2em 0
-  background #ccc
-  color #000
-  padding 0.2em 0
 
 h1,h2,h3,h4
-  font-family  fontArchivoNarrow
   font-weight 500
 
 section
-  padding-top 50px
+  display block
     
 
-aside
-  font-family  fontTitillium
+.header-container
+.main-container
+  text-shadow 0 1px 1px rgba(255,255,255,.3)
 
 .wrapper
   width 90%
   margin 0 5%
 
-#teaser
-  display none
-
-.header-container
-  line-height 0.2em
-
-.footer-container,
-    .main aside
-  display block
-
-.header-container,
-    .footer-container,
-    .main aside
-  background dkgrey
-
 .title
   color white
+  padding-left: 25px
+  padding-top: 5px
 
-nav a:hover,
-    nav a:visited
-  color white
-
-.home
-  .main
-    padding 0 0 0 0
 
 .main
-  padding 30px 0
   article
     h1
       font-size 2em
-  aside
-    color white
-    padding 0px 5% 10px
+ 
 
 .footer-container
+  background dkgrey
+  display block
   footer
     color white
   a
     color white
     text-decoration none
-    
+  .right
+    float none
+
+
+
+  
 
 
 .ie7
@@ -209,8 +205,92 @@ nav a:hover,
 .right
   float right
 
+#skills
+  clear:both
+  margin-bottom: 10px
+  height: 100%
+  dt
+    width 33%
+    float left
+    clear both
+    overflow hidden
+    white-space nowrap
+    font-weight 700
+  .sub
+    dt
+      font-weight normal
+      text-indent 10px
+
+  dd
+    width 65%
+    float left
+    height 20px
+    margin 0 0 0 0
+
+
+  .meter
+    display none
+
+  .sub
+    clear:both
+
+  .level-1
+    width 25%
+
+  .level-2
+    width 50%
+
+  .level-3
+    width 75%
+
+  .level-4
+    width 100%
+
+#timeline
+  margin: 20px auto
+  overflow: hidden
+  .timeslot   
+    border-top 3px solid ltgrey
+    padding-top 10px
+    border-left 3px solid secondColor
+    padding-left 5px
+
+  .year
+    padding-top 10px
+    font-size: 2em
+    color: firstColor
+    
+  .project
+    padding-bottom 20px
+    p
+      margin 5px 0 0 0
+    .name
+      font-size 1.5em
+
+    .label
+      background #ddd
+      float right
+      display inline
+      margin-right 5px
+      padding .2em .4em .3em
+      font-size 75%
+      font-weight 700
+      line-height 1
+      color #fff
+      text-align center
+      white-space nowrap
+      vertical-align baseline
+      border-radius .25em
+      transform rotate(-10deg)
+      
+
+
+
 
 @media only screen and (min-width: 480px)
+  #home
+    margin-top: 80px
+
   nav
     a
       float left
@@ -235,33 +315,45 @@ nav a:hover,
       a
         margin 0 0.7%
 
-  
+@media only screen and (min-height: 600px) and (min-width: 760px)
+    .line
+      position: fixed
+      width 100%
+    .footer-container
+      position absolute
+      width 100%
+      bottom 0
+      line-height 1em
+      position fixed
+    .panel
+      padding-top 60px
+      padding-bottom 100px
+
 
 @media only screen and (min-width: 760px) 
-  html
-    background dkgrey
 
-  .line
-    position: fixed
-    width: 100%
+  #home
+    padding-top 0px
+    padding-bottom 0px
+    margin-top: 0px
+  
+  .footer-container
+    .right
+      float right
+
+  .panel
+    z-index 2
+    min-width 100%
+    display none
+    min-height: 1000px
+    &:target
+      display block
+
   .header-container
     border-bottom: 5px solid ltgrey
     height 1000px
     background url('../images/home.jpg') top center no-repeat
     text-align right
-    .line
-      background dkgrey
-  
-  body
-    padding-bottom 75px
-  
-  .footer-container
-    position absolute
-    width 100%
-    bottom 0
-    line-height 1em
-    position fixed
-
   
   .vcard
     display inline
@@ -271,11 +363,8 @@ nav a:hover,
     border-radius 6px
     background firstColor
     box-shadow 1px 2px 5px  rgba(0,0,0,.50), inset 0 0 20px rgba(0,0,0,.25)
-    -webkit-transform rotate(-10deg)
-    -moz-transform rotate(-10deg)
     transform rotate(-10deg)
     line-height 1.5em
-    font-family fontOpenSans
     float right
     position absolute
     right 25px
@@ -283,7 +372,6 @@ nav a:hover,
     span
       font-weight bold
     a
-      font-family  fontTitillium
       text-decoration none
       color dkgrey
       font-size 24px
@@ -297,9 +385,7 @@ nav a:hover,
     text-align center
     line-height 0.2em
     font-weight 500
-
-  .vcard-top, .vcard-top h1
-    font-family fontArchivoBlack
+    font-family fontAmble
 
   .fn
     background #fff
@@ -307,10 +393,7 @@ nav a:hover,
     text-align center
     padding-top 5px
 
-  .header-container,
-      .main aside
-    border-bottom: 5px solid ltgrey
-
+ 
   .title
     float left
 
@@ -320,6 +403,48 @@ nav a:hover,
     li
       a
         transition all 0.4s ease-in-out
+
+  #skills
+    .entry
+      width 48%
+      float left
+    dd span
+      display none
+
+    .meter
+      display block
+      height 8px
+      background #e8e8e8
+      border 1px solid #ddd
+      border-radius 5px
+      box-shadow inset 0 -1px 1px rgba(255,255,255,0.3)
+      padding 2px 10px 2px 10px
+      & > span
+        display block
+        height 100%
+        border-radius 8px
+        box-shadow inset 0 2px 9px  rgba(255,255,255,0.2),
+        inset 0 -2px 6px rgba(0,0,0,0.2)
+        background-color firstColor
+        position relative
+        overflow hidden
+    .sub
+      dt
+        text-indent 0px
+
+  #timeline
+    .timeslot
+      padding-left: 130px
+      position relative
+      border-left none
+    .year
+      position absolute
+      top: 0
+      left: 0
+      height 100%
+      width: 100px
+      border-right 3px solid secondColor
+
 
 
 
@@ -378,8 +503,10 @@ nav a:hover,
       h3
     page-break-after avoid
 
-
-
-
-  
-
+  .top
+  nav
+  .footer-container
+  #home
+    display none
+  #about
+    margin-top 20px
