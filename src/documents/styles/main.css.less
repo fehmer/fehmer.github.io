@@ -9,8 +9,15 @@
 @navbar-default-link-hover-bg: @brand-primary;
 @navbar-default-link-active-bg: @brand-primary;
 
+html{
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+}
 body{
-  position:relative;
+  height: 100%;
+  max-height: 100%;
 }
 
 header{
@@ -24,30 +31,6 @@ nav li a{
   transition: all 0.4s ease-in-out;
 }
 
-// Active header
-/*nav a:active,
-nav a.active,
-#about:target ~ header nav #link-about,
-#projects:target ~ header nav #link-projects,
-#hire:target ~ header nav #link-hire {
-  background: @brand-primary;
-}
-#about:target ~ footer,
-#projects:target ~ footer,
-#hire:target ~ footer {
-  display:block;
-}
-#about:target ~ #home,
-#projects:target ~ #home,
-#hire:target ~ #home {
-  display:none;
-}
-#about:target ~ header,
-#projects:target ~ header,
-#hire:target ~ header {
-  display:block;
-}
-*/
 #home{
   position: relative;
   display: table;
@@ -58,6 +41,10 @@ nav a.active,
   background: #222 no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  background: url('../images/home.jpg') top center no-repeat;
+  border-bottom: 5px solid @gray-light;
+
+
 }
 
 //hide non active sections
@@ -79,19 +66,9 @@ section .container{
   }
 }
 
-#home .intro{
-  border-bottom: 5px solid @gray-light;
-  min-height: 1000px;
-  background: url('../images/home.jpg') top center no-repeat;
-  text-align: right;
-}
-
 footer{
   margin-top:25px;
   display:none;
-}
-header{
-  
 }
 
 

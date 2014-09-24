@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<section class="home" id="home">
-		<div class="intro" >
-				<%- @partial("section/home.html.jade", @) %>
-		</div>
+<section id="home">
+	<%- @partial("section/home.html.jade", @) %>
 </section>
 
 
