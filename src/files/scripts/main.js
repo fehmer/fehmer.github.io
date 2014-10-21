@@ -9,21 +9,22 @@ function scrollTo(hash){
   var to = $(hash).position().top;
   $('html, body').stop().animate({
         scrollTop: to+5
-    }, 800);
+    }, 500);
   return false;
 }
 
 function init () {
-
-  $(".start-center").click(function() {
-    scrollTo('#about');
-  });
-  $('header').click(function(target){
-    scrollTo(target.toElement.hash);
-  });
-  $('.top').click(function(target){
-    return scrollTo(this.hash);
-  });
+  if ($(window).width() > 760){
+    $(".start-center").click(function() {
+      scrollTo('#about');
+    });
+    $('header').click(function(target){
+      scrollTo(target.toElement.hash);
+    });
+    $('.top').click(function(target){
+      return scrollTo(this.hash);
+    });
+  }
   
 }
 

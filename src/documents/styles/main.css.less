@@ -59,39 +59,9 @@ nav li a{
   }
 
 .start{
-  position: absolute;
-  bottom: 50px;
-  width:100%;
-  text-align: center;
-  .start-center{
-    display: inline-block;
-    width: 66px;
-    height: 66px;
-    margin-bottom: 60px;
-    cursor: pointer;
-  }
-  .start-arrow{
-    font-size: 1.5em;
-    color: white;
-    padding-top:25px;
-  }
-  .start-circle{
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    margin: 3px 0 0 3px;
-    border: 4px solid rgba(255, 255, 255, 0.6);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
-  }
+  display: none;
 }
+
 //navbar padding
 section .container{
   position: relative;
@@ -102,6 +72,9 @@ section .container{
 
 a.top{
   color:@gray-lighter;
+  &:hover{
+    color:@brand-primary;
+  }
 }
 
 footer{
@@ -115,12 +88,40 @@ footer{
   text-shadow: none;
 }
 
-
-element.style {
-}
-.scrollspy-example {
-position: relative;
-height: 200px;
-margin-top: 10px;
-overflow: auto;
+@media only screen and (min-width: 760px){
+  .start{
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    text-align: center;
+    .start-center{
+      display: inline-block;
+      width: 66px;
+      height: 66px;
+      margin-bottom: 60px;
+      cursor: pointer;
+    }
+    .start-arrow{
+      font-size: 1.5em;
+      color: white;
+      padding-top:25px;
+    }
+    .start-circle{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      margin: 3px 0 0 3px;
+      border: 4px solid rgba(255, 255, 255, 0.6);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transition: all 0.2s ease 0s;
+      -moz-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+    }
+  }
 }

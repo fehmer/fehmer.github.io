@@ -9,5 +9,5 @@ type: private
 
 Development and redesign of my homepage using 
 
-- Docpad, JavaScript
+- Docpad, JavaScript, Jenkins
 - HTML 5, Twitter Bootstrap, LESS, Markdown, Jade
