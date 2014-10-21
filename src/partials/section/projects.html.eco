@@ -1,4 +1,4 @@
-<h1>Projekte</h1>
+<h1>projects</h1>
 
 <div id="timeline">
   <% for year in @pyears(): %>

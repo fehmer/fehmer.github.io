@@ -4,7 +4,7 @@ cacheable: false
 <div class="project">
   <div class="name">
     <%= @title %>
-    <% if @duration? :%>(<%= @duration %> Monate)<% end %>
+    <%= @getDuration(@duration) %>
     <% if @type != "com": %>
       <div class="label"><%= @type %></div>
     <% end %>

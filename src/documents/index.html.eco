@@ -15,7 +15,8 @@ layout: default
 		<section class="<%= section %> frontpage" id="<%= section %>">
 			<div class="container">
 				<%- @partial("section/#{section}.html", @) %>
-				<a href="#<%= section %>" class="top">nach oben</a>
+
+				<a href="#<%= section %>" class="top" title="to <%= section %>"><span class="glyphicon glyphicon-chevron-up"></span></a>
 			</div>
 		</section>
 		<% end %>

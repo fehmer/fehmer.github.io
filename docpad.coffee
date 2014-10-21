@@ -100,6 +100,13 @@ docpadConfig = {
                 $a.attr('href', baseUrl + href) unless regex.test(href)
             $.html()
 
+        getDuration: (duration) ->
+            return if not duration?
+            d = duration.toString()
+            if d.substring(0,2) is '->'
+                return '(till '+ d.substring(3,d.length)+ ')'
+            return '('+duration+' months)'
+
         pyears: () ->
             foo = @getCollection('documents').findAllLive({relativeDirPath: 'projects'}, [date: -1]).toJSON().map (doc) -> doc.year
             return foo.unique().sort().reverse()

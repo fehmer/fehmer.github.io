@@ -4,13 +4,10 @@ title: Webseite
 year: 2014
 date: 2014-09-21
 tags: Markdown NoSQL Javascript Docpad
-type: privat
+type: private
 ---
 
-Entwicklung und Redesign meiner privaten Webseite.
+Development and redesign of my homepage using 
 
-- Docpad
-- Markdown
-- Javascript
-
-Tätigkeiten: Architektur, Konzeption und Design, Anwendungsentwicklung
+- Docpad, JavaScript
+- HTML 5, Twitter Bootstrap, LESS, Markdown, Jade

@@ -1,17 +1,17 @@
 ---
 layout: project
-title: Telekommunikation
+title: Telecommunication Company
 year: 2013
 date: 2013-09-01
 duration: 12
-tags: Java Servlet Spring SpringSecurity MySQL Postgres Tomcat
+tags: Java Servlet Spring SpringSecurity MySQL Postgres Tomcat RestEasy Jboss
 type: com
 ---
 
-Toll toll, supertoll
+Development of various web services using RestEasy and tools
 
-- Java 5, Servlet API, Spring, Spring Security, Hibernate, JSP
-- Datenbanken: MySQL
-- Laufzeitumgebungen: Tomcat 6
+- Java 5, Servlet API, Spring, Spring Security, jUnit, XML/XSLT
+- Databases: MySQL, PostgreSQL
+- Runtime: Tomcat, Jboss
 
-Tätigkeiten: Architektur, Konzeption und Design, Anwendungsentwicklung
+Tasks: architecture, concept and design, application development
