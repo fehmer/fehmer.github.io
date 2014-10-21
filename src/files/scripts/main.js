@@ -8,7 +8,7 @@ function scrollTo(hash){
   if(hash=='')return true;
   var to = $(hash).position().top;
   $('html, body').stop().animate({
-        scrollTop: to
+        scrollTop: to+5
     }, 800);
   return false;
 }
