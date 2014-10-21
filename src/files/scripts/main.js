@@ -15,11 +15,11 @@ function scrollTo(hash){
 
 function init () {
   if ($(window).width() > 760){
-    $(".start-center").click(function() {
-      scrollTo('#about');
+    $(".start-center a").click(function() {
+      return scrollTo(this.hash);
     });
     $('header').click(function(target){
-      scrollTo(target.toElement.hash);
+      return scrollTo(target.toElement.hash);
     });
     $('.top').click(function(target){
       return scrollTo(this.hash);
