@@ -2,27 +2,23 @@
   "name": "fehmer.info-docpad",
   "version": "0.1.0",
   "description": "Source for www.fehmer.info",
-  "engines": {
-    "node": "0.10",
-    "npm": "1.3"
-  },
   "dependencies": {
-    "moment": "~2.8.3",
-    "docpad-plugin-marked": "~2.2.1",
-    "cheerio": "~0.17.0",
-    "docpad": "~6.69.1",
-    "docpad-plugin-eco": "~2.0.3",
-    "docpad-plugin-livereload": "~2.6.0",
-    "docpad-plugin-jade": "~2.7.0",
-    "docpad-plugin-partials": "~2.9.1",
-    "docpad-plugin-cleanurls": "~2.7.0",
-    "docpad-plugin-tags": "~2.0.7",
-    "docpad-plugin-dateurls": "https://github.com/ervwalter/docpad-plugin-dateurls/tarball/compiled",
-    "docpad-plugin-paged": "https://github.com/ervwalter/docpad-plugin-paged/tarball/compiled",
-    "docpad-plugin-less": "~2.4.1"
+    "cheerio": "^0.20.0",
+    "docpad": "~6.78.4",
+    "docpad-plugin-cleanurls": "^2.8.1",
+    "docpad-plugin-dateurls": "^2.4.0",
+    "docpad-plugin-eco": "^2.1.0",
+    "docpad-plugin-jade": "^2.10.0",
+    "docpad-plugin-less": "^2.4.1",
+    "docpad-plugin-livereload": "^2.7.1",
+    "docpad-plugin-marked": "^2.3.0",
+    "docpad-plugin-paged": "^2.4.0",
+    "docpad-plugin-partials": "^2.9.2",
+    "docpad-plugin-tags": "^2.0.7",
+    "moment": "^2.11.2"
   },
-  "main": "node_modules/docpad/bin/docpad-server",
+  "main": "node_modules/.bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "start": "node_modules/.bin/docpad-server"
   }
 }
