@@ -17,5 +17,3 @@ Concept and implementation of the business intelligence system RePortal, part of
 - Synchronisation of the portal page model using XMLAccess
 - Database: DB2
 - Runtime: WebSphere Portal 6
-
-Tasks: architecture, concept and design of the application and the underlaying framework, application development

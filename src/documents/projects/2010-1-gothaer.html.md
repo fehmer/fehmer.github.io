@@ -13,5 +13,3 @@ Concept and development of a Proof-of-concept of a company information system (d
 - Java 5, Servlet API, Spring, Spring Security, Hibernate, JSP
 - Database: MySQL
 - Runtime: Tomcat 6
-
-Tasks: architecture, concept and design, application development

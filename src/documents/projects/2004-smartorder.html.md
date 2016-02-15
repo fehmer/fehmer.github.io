@@ -8,9 +8,7 @@ tags: php java mysql html css
 type: com
 ---
 
-concept and implementation of the reverse auction platform "smartorder"
+Concept and implementation of the reverse auction platform "smartorder"
 
 - PHP, Smarty, Java, MySQL
 - xHTML, CSS
-
-Tasks: concept and design, application development

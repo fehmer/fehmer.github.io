@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Webseite
+title: Website
 year: 2014
 date: 2014-09-21
 tags: Markdown NoSQL Javascript Docpad

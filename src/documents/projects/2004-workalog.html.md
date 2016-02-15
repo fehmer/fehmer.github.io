@@ -10,5 +10,3 @@ type: com
 
 - project management Workalog oHG
 - project management Typologen.de
-
-Tasks: concept, application devlopment

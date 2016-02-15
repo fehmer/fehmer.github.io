@@ -13,5 +13,3 @@ Proof of concept of a administration interface for a product database.
 - JavaScript, Meteor, Handlebars, Iron Router
 - HTML 5, LESS, Handebars
 - Database: MongoDB
-
-Tasks: architecture, concept and design, development

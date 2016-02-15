@@ -13,5 +13,3 @@ Concept and implementation of a management information system
 - Java, Portlet API 1, IBM Portal APIs, PUMA, inter-portlet communication using portlet wiring
 - Database: DB2
 - Runtime: WebSphere Portal 5.1
-
-Tasks: concept and design, application development

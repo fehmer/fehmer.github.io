@@ -15,5 +15,3 @@ Migration of the customer website to WebSphere Portal, integration of the existi
 - XML/XSL transformation in the portal theme and filters
 - Portal Themes, HTML, CSS, JavaScript, client-side-aggregation
 - Runtime: WebSphere Portal 6.1
-
-Tasks: concept and design, application development

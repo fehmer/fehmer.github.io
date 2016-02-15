@@ -13,5 +13,3 @@ Concept and implementation of a information system
 - Java 5, Servlet API, Spring(MVC, Remoting, AOP), JPA/Hibernate, Freemarker, JavaScript, jUnit
 - Database: DB2
 - Runtime: Tomcat 5.5
-
-Tasks: architecture, concept and design, application development

@@ -13,5 +13,3 @@ Development of various web services using RestEasy and tools
 - Java 5, Servlet API, Spring, Spring Security, jUnit, XML/XSLT
 - Databases: MySQL, PostgreSQL
 - Runtime: Tomcat, Jboss
-
-Tasks: architecture, concept and design, application development

@@ -15,5 +15,3 @@ Concept and implementation of a company wide architecture
 - Database: Oracle, DB2, MySQL, HSQL
 - Runtime: various servlet container, WebSphere Portal, Maven (plugins)
 - Maven, Maven Site, Nexus, Hudson, xWiki
-
-Tasks: architecture, concept and design, application development
