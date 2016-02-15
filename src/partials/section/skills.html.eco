@@ -1,5 +1,3 @@
- <h1>Skills</h1>
-
 <dl id="skills" class="clearfix">
 
  <% for skill,data of @skills : %>

@@ -2,21 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <%- @getBlock("meta").toHTML() %>
     <title><%= @getPreparedTitle() %></title>
-    <%- @getBlock("styles").add(['styles/main.css']).toHTML() %>
-    <%- @getBlock("scripts").add(['scripts/bootstrap.min.js', 'scripts/main.js','scripts/scrollspy.js']).toHTML() %>
+    <%- @getBlock("styles").add(['/styles/main.css']).toHTML() %>
+    <%- @getBlock("scripts").add(['/scripts/bootstrap.min.js','/scripts/main.js','/scripts/scrollspy.js']).toHTML() %>
   </head>
   <body data-spy="scroll" data-target="#navigation" data-offset="0" >
 
-   <%- @content %>
+    <%- @content %>
 
     <%- @partial('nav', {blog:@isBlog()})%>
-
- 
-
- 
 
     <footer>
       <div class="container">
@@ -24,6 +20,6 @@
       </div>
     </footer>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
 </html>

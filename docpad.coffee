@@ -27,15 +27,15 @@ docpadConfig = {
             # cache-busting timestamp
             timestamp: new Date().getTime()
 
-        sections: ['home', 'about', 'projects', 'blog', 'hire']
+        sections: ['home', 'about', 'projects', 'skills', 'hire']
 
         labels:
             home: 'Hello!'
-            about: 'Über mich'
-            projects: 'Projekte'
-            skills: 'Skills'
-            blog: 'Blog'
-            hire: 'Hire!'
+            about: 'about me'
+            projects: 'projects'
+            skills: 'skills'
+            blog: 'blog'
+            hire: 'hire!'
 
         levelLabels: ['basic','advanced','professional','expert']
 
@@ -69,7 +69,6 @@ docpadConfig = {
             else
                 @site.title
 
-        homeClass: -> if @document.name is 'index.html' then 'home'
         isBlog: -> if @document.name is 'blog.html' or  @document.layout is 'posts' then true else false
 
         getTagUrl: (tag) ->

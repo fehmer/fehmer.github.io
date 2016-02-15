@@ -1,12 +1,41 @@
 #timeline{
+  ul {
+    list-style-type: none;
+    padding-left:0px;
+
+    li:before {
+      content: "\e080";
+      font-family: 'Glyphicons Halflings';
+      font-size: 10px;
+      position: relative;
+      margin-right: 10px;
+      color: @gray-lighter;
+    }
+  }
+
   margin: 20px auto;
   overflow: hidden;
   
   .timeslot{
-    border-bottom: 3px solid @gray-lighter;
     padding-top: 10px;
     padding-left: 5px;
+    padding-bottom: 10px;
   }
+  .timeslot::last-child{
+    padding-bottom: 0;
+  }
+  .project::before{
+      content: '';
+      width: 10px;
+      color: @brand-primary;
+      float:left;
+      position: relative;
+      top:20px;
+      left:-30px;
+      top: 17px;
+      border-bottom: 3px solid #2780e3;
+      margin-right: -10px;
+    }
 
   .year{
     padding-top: 10px;
@@ -21,8 +50,8 @@
     }
     .name{
       font-size: 1.7em;
-
     }
+
   }
   
   .label{
